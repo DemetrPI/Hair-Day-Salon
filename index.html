@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- MetaData -->
+    <meta charset="utf-8" />
+    <title class="translate0">Hair Day salon</title>
+    <meta
+      content="Hair Day is a boutique hair salon that specializes in cut, color and styling."
+      name="description"
+    />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Hair Day salon" name="author" />
+    <meta content="Hair Day salon" property="og:title" />
+    <meta content="website" property="og:type" />
+    <meta content="Artboard 1.png" property="og:image" />
+    <meta content="https://hairDay/" property="og:url" />
+    <meta
+      content="Hair Day is a boutique hair salon that specializes in cut, color and styling."
+      property="og:description"
+    />
+    <meta content="en_US" property="og:locale" />
+    <meta content="hairDay" property="og:site_name" />
+    <!-- Favicons -->
+    <link
+      href="img/favicons/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="img/favicons/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="img/favicons/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link href="img/favicons/site.webmanifest" rel="manifest" />
+    <link
+      color="#5bbad5"
+      href="img/favicons/safari-pinned-tab.svg"
+      rel="mask-icon"
+    />
+    <!-- Stylesheets -->
+    <link href="CSS/normalize.css" rel="stylesheet" />
+    <link href="CSS/styles.css" rel="stylesheet" />
+    <link href="CSS/output.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome kit -->
+    <script
+      crossorigin="anonymous"
+      src="https://kit.fontawesome.com/fb1859fd88.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Header (logo picture) -->
+    <header id="header">
+      <img
+        alt="Hair Day salon logo"
+        class="logo"
+        id="logo"
+        src="img/Artboard 1.png"
+      />
+    </header>
+    <!-- Navigation panel for standard mode-->
+    <nav class="mb-12" id="index">
+      <ul>
+        <li>
+          <a class="myButton translate11" href="#about"> About us </a>
+        </li>
+        <li>
+          <a class="myButton translate12" href="#appointment"> Appointment </a>
+        </li>
+        <li>
+          <a class="myButton translate13" href="#contacts"> Contacts </a>
+        </li>
+        <li>
+          <div class="dropDownMenu">
+            <button class="myButton">
+              <i class="fas fa-globe-europe"></i>
+            </button>
+            <div class="dropdownContent">
+              <a class="myButton translate14 england" href="#eng" >
+                English
+              </a>
+              <a class="myButton translate15 ukraine" href="#ukr">
+                Ukrainian
+              </a>
+              <a class="myButton translate45 spain" href="#esp" >
+                Spanish
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navigation panel for scrolling down mode-->
+    <nav id="hiddenMenu">
+      <img alt="Hair Day salon logo" src="img/Artboard 22.png" />
+      <a class="hiddenMenu translate16" href="#about"> About us </a>
+      <a class="hiddenMenu translate17" href="#appointment"> Appointment </a>
+      <a class="hiddenMenu translate18" href="#contacts"> Contacts </a>
+      <div class="dropDownMenu hiddenMenu">
+        <i class="fas fa-globe-europe"></i>
+        <div class="dropdownContent">
+          <a class="myButton translate19 england" href="#eng" 
+            >English</a
+          >
+          <a class="myButton translate20 ukraine" href="#ukr" 
+            >Ukrainian</a
+          >
+          <a class="myButton translate46 spain" href="#esp" 
+            >Spanish</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation panel for mobile view (appears only for screens less than 1023px) -->
+    <nav class="dropDown">
+      <div class="dropDownContent">
+        <button class="dropDownButton myButton">
+          <a href="#about">
+            <i class="far fa-address-card"> </i>
+          </a>
+        </button>
+        <!-- Appointment -->
+        <button class="dropDownButton myButton">
+          <a href="#appointment">
+            <i class="far fa-calendar-check"> </i>
+          </a>
+        </button>
+        <!-- Contacts button -->
+        <button class="dropDownButton myButton">
+          <a href="#contacts">
+            <i class="far fa-address-book"> </i>
+          </a>
+        </button>
+        <button class="dropDownButton myButton england">
+          <a href="#eng" >
+            <img alt="UK flag" src="img/united-kingdom.png" />
+          </a>
+        </button>
+        <button class="dropDownButton myButton ukraine" >
+          <a href="#ukr">
+            <img alt="Ukraine flag" src="img/ukraine.png" />
+          </a>
+        </button>
+        <button class="dropDownButton myButton spain" >
+          <a href="#esp">
+            <img alt="Spanish flag" src="img/spain.png" />
+          </a>
+        </button>
+      </div>
+      <!-- menu bars  -->
+      <button class="dropDownButton myButton" id="menuBars">
+        <i class="fas fa-bars"> </i>
+      </button>
+    </nav>
+    <main>
+      <section>
+        <!-- Promotion banner -->
+        <article id="promotion">
+          <picture>
+            <source media="(min-width: 650px)" srcset="img/promo_large.jpg" />
+            <img alt="Promotional photo" src="img/promo_small.jpg" />
+          </picture>
+          <h1 class="mt-4 translate1">Hair Day beauty salon</h1>
+          <p class="translate28">
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness. No one
+            rejects, dislikes, or avoids pleasure itself, because it is
+            pleasure, but because those who do not know how to pursue pleasure
+            rationally encounter consequences that are extremely painful. Nor
+            again is there anyone who loves or pursues or desires to obtain pain
+            of itself, because it is pain, but because occasionally
+            circumstances occur in which toil and pain can procure him some
+            great pleasure. To take a trivial example, which of us ever
+            undertakes laborious physical exercise, except to obtain some
+            advantage from it? But who has any right to find fault with a man
+            who chooses to enjoy a pleasure that has no annoying consequences,
+            or one who avoids a pain that produces no resultant pleasure?
+          </p>
+        </article>
+      </section>
+      <!-- Info headers -->
+      <section class="info">
+        <article>
+        <div class="headerText">
+          <h2 class="translate4 articleHeader">Styling and haircut</h2>
+        </div>
+        <div>
+          <picture>
+            <source
+            media="(min-width: 650px)"
+            srcset="img/hair_style_large.jpg"
+            />
+            <img alt="Hair styling" src="img/hair_style_small.jpg" />
+          </picture>
+        </div>
+        <div>
+          <p class="translate29">
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness. No one
+            rejects, dislikes, or avoids pleasure itself, because it is
+            pleasure, but because those who do not know how to pursue pleasure
+            rationally encounter consequences that are extremely painful.
+          </p>
+        </div>
+        </article>
+        <article>
+          <div class="headerText">
+
+            <h2 class="translate5 articleHeader">Colouring and washing</h2>
+          </div>
+          <div>
+
+            <picture>
+              <source
+              media="(min-width: 650px)"
+              srcset="img/hair_wash_large.jpg"
+              />
+              <img alt="Hair washing" src="img/hair_wash_small.jpg" width="80%" />
+            </picture>
+          </div>
+          <div>
+
+            <p class="translate30">
+              But I must explain to you how all this mistaken idea of denouncing
+              pleasure and praising pain was born and I will give you a complete
+              account of the system, and expound the actual teachings of the great
+              explorer of the truth, the master-builder of human happiness. No one
+              rejects, dislikes, or avoids pleasure itself, because it is
+              pleasure, but because those who do not know how to pursue pleasure
+              rationally encounter consequences that are extremely painful.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="headerText">
+
+            <h2 class="translate6 articleHeader">Wedding hairstyles</h2>
+          </div>
+          <div>
+
+            <picture>
+              <source
+              media="(min-width: 650px)"
+            srcset="img/bride_styling_large.jpg"
+            />
+            <img
+            alt="Bride hair styling"
+            src="img/bride_styling_small.jpg"
+            width="80%"
+            />
+          </picture>
+        </div>
+        <div>
+
+          <p class="translate31">
+            But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness. No one
+            rejects, dislikes, or avoids pleasure itself, because it is
+            pleasure, but because those who do not know how to pursue pleasure
+            rationally encounter consequences that are extremely painful.
+          </p>
+        </div>
+        </article>
+      </section>
+      <!-- About Us section -->
+      <section id="about">
+        <article>
+          <!-- Boss photo -->
+          <h1 class="mt-12 translate43">Our Boss!</h1>
+          <picture>
+            <source media="(min-width: 650px)" srcset="img/chief_large.jpg" />
+            <img alt="Our Boss" src="img/chief_small.jpg" />
+          </picture>
+          <p class="translate32">
+            "But I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you a complete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness. No one
+            rejects, dislikes, or avoids pleasure itself, because it is
+            pleasure, but because those who do not know how to pursue pleasure
+            rationally encounter consequences that are extremely painful.
+          </p>
+        </article>
+      </section>
+      <!-- Stuff cards -->
+      <h1 class="translate2">Our professionals</h1>
+      <section class="stuff">
+        <article class="cards">
+          <div class="headerText">
+
+            <h2 class="translate7 articleHeader">Sharlotta Bronte</h2>
+          </div>
+          <div>
+
+            <picture>
+              <source
+              media="(min-width: 650px)"
+              srcset="img/personal_one_large.jpg"
+              />
+              <img alt="stuff member photo" src="img/personal_one_small.jpg" />
+            </picture>
+          </div>
+          <div>
+
+            <p class="translate33">
+              But who has any right to find fault with a man who chooses to enjoy
+              a pleasure that has no annoying consequences, or one who avoids a
+              pain that produces no resultant pleasure?"
+            </p>
+          </div>
+        </article>
+        <article class="cards">
+          <div class="headerText">
+
+            <h2 class="translate8">James Bond</h2>
+          </div>
+          <div>
+
+            <picture>
+              <source
+              media="(min-width: 650px)"
+              srcset="img\personal_two_lagre.jpg"
+              />
+              <img alt="stuff member photo" src="img/personal_two_small.jpg" />
+            </picture>
+          </div>
+          <div>
+
+            <p class="translate34 articleHeader">
+              But who has any right to find fault with a man who chooses to enjoy
+              a pleasure that has no annoying consequences, or one who avoids a
+              pain that produces no resultant pleasure?"
+            </p>
+          </div>
+        </article>
+        <article class="cards">
+          <div class="headerText">
+
+            <h2 class="translate9 articleHeader">Emily Parker</h2>
+          </div>
+          <div>
+
+            <picture>
+              <source
+              media="(min-width: 650px)"
+              srcset="img/personal_three_large.jpg"
+              />
+              <img alt="stuff member photo" src="img/personal_three_small.jpg" />
+            </picture>
+          </div>
+          <div>
+
+            <p class="translate35">
+              But who has any right to find fault with a man who chooses to enjoy
+              a pleasure that has no annoying consequences, or one who avoids a
+              pain that produces no resultant pleasure?"
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- Appointment with hairdresser, this section was made using Tailwind(c). 
+        Also, custom check-boxes as images were made -->
+      <section class="appointment" id="appointment">
+        <article>
+          <form
+            action=""
+            class="form"
+            id="appointmentForm"
+            method="get"
+            name="appointmentForm"
+          >
+            <h1 class="translate3">Appointment with the hairdresser</h1>
+            <h2 class="translate44">
+              Please select the services you want to order by clicking on the
+              corresponding picture
+            </h2>
+            <div
+              class="grid grid-cols-4 grid-flow-row-dense justify-items-center mb-10"
+            >
+              <div>
+                <label class="label-for-checkbox" for="haircut">
+                  <input
+                    class="custom-checkbox haircut"
+                    id="haircut"
+                    name="haircut"
+                    type="checkbox"
+                    value="haircut"
+                  />
+                </label>
+              </div>
+              <div>
+                <label class="label-for-checkbox" for="hairwash">
+                  <input
+                    class="custom-checkbox hairwash"
+                    id="hairwash"
+                    name="hairwash"
+                    type="checkbox"
+                    value="hairwash"
+                  />
+                </label>
+              </div>
+              <div>
+                <label class="label-for-checkbox" for="styling">
+                  <input
+                    class="custom-checkbox styling"
+                    id="styles"
+                    name="styling"
+                    type="checkbox"
+                    value="styling"
+                  />
+                </label>
+              </div>
+              <div>
+                <label class="label-for-checkbox" for="colouring">
+                  <input
+                    class="custom-checkbox colouring"
+                    id="colouring"
+                    name="colouring"
+                    type="checkbox"
+                    value="colouring"
+                  />
+                </label>
+              </div>
+              <div>
+                <p class="translate36">Haircut</p>
+              </div>
+              <div>
+                <p class="translate37">Hairwash</p>
+              </div>
+              <div>
+                <p class="translate38">Styling</p>
+              </div>
+              <div>
+                <p class="translate39">Colouring</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 grid-rows-5 mb-4">
+              <div class="grid grid-cols-2 mb-4">
+                <div>
+                  <label class="translate23" for="clientName">
+                    Please, tell us Your name
+                  </label>
+                </div>
+                <div>
+                  <input
+                    class="fields"
+                    id="clientName"
+                    name="clientName"
+                    placeholder="Mary Ann"
+                    required=""
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div class="grid grid-cols-2 mb-4">
+                <div>
+                  <label class="translate24" for="email-address">
+                    Email address
+                  </label>
+                </div>
+                <div>
+                  <input
+                    class="fields"
+                    id="email-address"
+                    name="email-address"
+                    placeholder="your-email@address.com"
+                    required=""
+                    type="email"
+                  />
+                </div>
+              </div>
+              <div class="grid grid-cols-2 mb-4">
+                <div>
+                  <label class="translate25" for="appointmentDate">
+                    Appointment date
+                  </label>
+                </div>
+                <div>
+                  <input
+                    id="appointmentDate"
+                    name="appointmentDate"
+                    required=""
+                    type="date"
+                  />
+                </div>
+              </div>
+              <div class="grid grid-cols-2 mb-4">
+                <div>
+                  <label class="translate26" for="time">
+                    Time of the visit
+                  </label>
+                </div>
+                <div>
+                  <input
+                    id="time"
+                    max="18:00"
+                    min="10:00"
+                    name="time"
+                    required=""
+                    type="time"
+                  />
+                </div>
+              </div>
+              <div class="grid grid-cols-2 mb-4">
+                <div>
+                  <label class="translate27" for="phone">
+                    Enter your phone number:
+                  </label>
+                </div>
+                <div>
+                  <input
+                    id="phone"
+                    name="phone"
+                    placeholder="1234567859"
+                    required=""
+                    type="tel"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 justify-items-center mb-4">
+              <button
+                class="myButton translate41"
+                id="openButton"
+                onclick="appointed()"
+                type="button"
+              >
+                Appoint Now!
+              </button>
+            </div>
+            <!-- Modal -->
+            <dialog class="modal" id="modal">
+              <h2 class="translate10">Thank You for your appointment!</h2>
+              <p id="modalText"></p>
+              <button class="myButton translate42" id="closeButton">OK!</button>
+            </dialog>
+          </form>
+        </article>
+      </section>
+      <!-- Arrow up button -->
+      <button class="dropDownButton myButton arrowUp">
+        <a href="#logo">
+          <i class="fas fa-arrow-up"> </i>
+        </a>
+      </button>
+    </main>
+    <!-- Footer -->
+    <footer id="contacts">
+      <div class="logo">
+        <img alt="Text logo" src="img/Artboard 23.png" />
+      </div>
+      <div class="phone">
+        <i class="fas fa-phone-alt"> </i>
+        <a class="translate21" href="tel:+"> +(123)123-45-67 </a>
+      </div>
+      <div class="mail">
+        <i class="far fa-envelope"> </i>
+        <a class="translate22" href="mailto:"> email@hairday.com </a>
+      </div>
+      <div class="copyright">
+        <p class="translate40">© Hair Day 2023</p>
+      </div>
+    </footer>
+    <script src="JS/main.js"></script>
+    <script src="JS/autoLangSelect.js" type="module"></script>
+  </body>
+</html>

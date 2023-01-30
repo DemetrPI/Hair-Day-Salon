@@ -1,0 +1,551 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Set up color scheme */
+  --dustyRose: rgb(238, 214, 211);
+  --roseWater: rgb(232, 181, 185);
+  --coffeePot: rgb(164, 147, 147);
+  --coffeePotSecondary: rgb(103, 89, 94);
+  --buttonBorder: rgb(28, 110, 164);
+  --dustyRoseInput: rgba(208, 226, 226, 0.834);
+  /* Set up shadow */
+  --shadow: var(--coffeePot) 2px 2px 2px 2px;
+  /* Set up fonts and spacing */
+  --primaryFontSizeAndSpacing: 3rem;
+  --secondaryFontSizeAndSpacing: 2rem;
+  --tretiaryFontSizeAndSpacing: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--dustyRose);
+  cursor: url(img/cursor.cur), auto;
+}
+
+h1,
+h2,
+p,
+label {
+  color: var(--coffeePotSecondary);
+}
+
+header {
+  margin-bottom: var(--secondaryFontSizeAndSpacing);
+}
+
+h1,
+h2 {
+  font-weight: 900;
+  text-align: center;
+  margin-top: var(--secondaryFontSizeAndSpacing);
+  margin-bottom: var(--tretiaryFontSizeAndSpacing);
+}
+
+h1 {
+  font-size: var(--primaryFontSizeAndSpacing);
+}
+h2 {
+  font-size: var(--secondaryFontSizeAndSpacing);
+}
+p {
+  text-align: justify;
+  font-size: var(--tretiaryFontSizeAndSpacing);
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: var(--tretiaryFontSizeAndSpacing);
+}
+label {
+  font-size: var(--tretiaryFontSizeAndSpacing);
+  margin-left: 5%;
+}
+
+picture > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  opacity: 80%;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display:inline-block;
+  margin-right: 5%;
+}
+
+a {
+  text-decoration: none;
+  font-size: var(--tretiaryFontSizeAndSpacing);
+  cursor: pointer;
+}
+
+div {
+  text-decoration: none;
+  font-size: var(--tretiaryFontSizeAndSpacing);
+  cursor: pointer;
+}
+
+#hiddenMenu {
+  background-color: var(--roseWater);
+  position: fixed; /* Make it stick/fixed */
+  top: -100px; /* Hide the navbar outside of the top view */
+  width: 100%;
+  height: calc(var(--secondaryFontSizeAndSpacing) * 2);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  transition: top 0.5s; /* Transition effect when sliding down (and up) */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style the navbar links */
+.hiddenMenu {
+  float: left;
+  color: var(--coffeePotSecondary);
+  flex: 1;
+  height: auto;
+  line-height: var(--secondaryFontSizeAndSpacing);
+}
+#hiddenMenu img {
+  padding-top: 8px;
+  float: left;
+  display: block;
+  width: auto;
+  height: 100%;
+  margin-right: var(--secondaryFontSizeAndSpacing);
+}
+
+#hiddenMenu a:hover {
+  background-color: var(--coffeePot);
+  color: var(--dustyRose);
+}
+
+.myButton {
+  color: var(--coffeePotSecondary);
+  height: var(--primaryFontSizeAndSpacing);
+  width: calc(var(--secondaryFontSizeAndSpacing) * 6);
+  padding: 7px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--dustyRose), var(--roseWater));
+  box-shadow: var(--shadow);
+  border: 2px solid var(--coffeePot);
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  font-size: var(--tretiaryFontSizeAndSpacing);
+}
+
+.myButton:hover {
+  background: var(--coffeePot);
+}
+
+.myButton:active {
+  background: var(--roseWater);
+  color: var(--buttonBorder);
+}
+
+.dropDownMenu{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  right: var(--primaryFontSizeAndSpacing);
+  /* top: 50px; */
+  min-width: 160px;
+  box-shadow: var(--shadow);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdownContent a {
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdownContent a:hover 
+{background: var(--coffeePot);}
+
+/* Show the dropdown menu on hover */
+.dropDownMenu:hover .dropdownContent {
+  display: block;
+}
+
+.info,
+.stuff {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+
+}
+
+.headerText {
+  height: calc(var(--primaryFontSizeAndSpacing)*2);
+}
+
+
+form {
+  border: 1px solid var(--buttonBorder);
+  border-radius: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: var(--secondaryFontSizeAndSpacing);
+  box-shadow: var(--shadow);
+}
+label {
+  font-size: var(--tretiaryFontSizeAndSpacing);
+  margin-bottom: var(--tretiaryFontSizeAndSpacing);
+}
+form p {
+  font-size: var(--tretiaryFontSizeAndSpacing);
+}
+input {
+  border-radius: 8px;
+  border: 2px solid var(--roseWater);
+  background-color: var(--dustyRoseInput);
+  box-shadow: var(--shadow);
+  width: 80%;
+  padding: calc(var(--secondaryFontSizeAndSpacing) * 0.5);
+  margin-bottom: inherit;
+  color: var(--coffeePotSecondary);
+  font-size: var(--tretiaryFontSizeAndSpacing);
+}
+input:focus {
+  background-color: var(--dustyRoseInput);
+  border: 2px solid var(--roseWater);
+  color: var(--coffeePotSecondary);
+}
+
+input::placeholder {
+  color: var(--coffeePotSecondary);
+}
+
+.info p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.label-for-checkbox {
+  display: block; /* so the label can enfold another element and placed properly */
+  position: relative; /* so the content can be placed absolutely */
+  box-sizing: border-box; /* so the padding does not affect the position of content */
+  height: calc(var(--secondaryFontSizeAndSpacing) * 5);
+  width: calc(var(--secondaryFontSizeAndSpacing) * 5);
+}
+
+.custom-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; /* so the operating system does nothing about rendering the element*/
+  display: inline-block; /* so it can be positioned absolutely */
+  position: absolute; /* so it can be placed anywhere */
+  width: inherit;
+  height: inherit;
+  right: 0;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 25%;
+  box-shadow: none;
+  transition-property: border-radius;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+/* style for checked check-boxes */
+.haircut:checked,
+.hairwash:checked,
+.colouring:checked,
+.styling:checked {
+  filter: grayscale(100%);
+  border-radius: 50%;
+}
+
+.haircut:hover,
+.hairwash:hover,
+.colouring:hover,
+.styling:hover {
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+
+/* background images for check-boxes */
+.hairwash {
+  background-image: url("../img/wash_smallest.jpg");
+}
+
+.haircut {
+  background-image: url("../img/cut_smallest_1.jpg");
+}
+
+.colouring {
+  background-image: url("../img/colour_smallest.jpg");
+}
+
+.styling {
+  background-image: url("../img/styling_smallest.jpg");
+}
+
+dialog {
+  text-align: center;
+  border-radius: 10px;
+  border: 3px solid var(--roseWater);
+  box-shadow: var(--shadow);
+}
+
+dialog h2 {
+  margin-top: var(--tretiaryFontSizeAndSpacing);
+}
+dialog::backdrop {
+  background: rgb(0 0 0 / 0.5);
+}
+
+footer {
+  margin-top: 2%;
+  padding-top: var(--tretiaryFontSizeAndSpacing);
+  padding-bottom: var(--tretiaryFontSizeAndSpacing);
+  display: flex;
+  background-color: var(--roseWater);
+}
+footer div {
+  flex: 1;
+}
+
+footer img {
+  margin: calc(var(--secondaryFontSizeAndSpacing) * 0.5) 0 0
+    var(--tretiaryFontSizeAndSpacing);
+  width: 90%;
+}
+footer div > p {
+  margin: unset;
+  text-align: center;
+  font-size: var(--tretiaryFontSizeAndSpacing);
+}
+
+footer a,
+i {
+  text-align: center;
+  color: var(--coffeePotSecondary);
+}
+/* disable mobile menu and buttons for larger screen sizes */
+.dropDown,
+.arrowUp {
+  display: none;
+}
+
+/* scaling for X-large screens */
+@media screen and (min-width: 1440) {
+  :root {
+    --primaryFontSizeAndSpacing: 6rem;
+    --secondaryFontSizeAndSpacing: 4rem;
+    --tretiaryFontSizeAndSpacing: 3rem;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1024px) {
+  #promotion {
+    margin-top: 8%;
+  }
+  h2 {
+    font-size: var(--secondaryFontSizeAndSpacing);
+  }
+  p {
+    font-size: calc(var(--tretiaryFontSizeAndSpacing));
+  }
+  form p,
+  form label,
+  form input {
+    font-size: var(--secondaryFontSizeAndSpacing);
+  }
+  .myButton {
+    font-size: var(--tretiaryFontSizeAndSpacing);
+  }
+
+  #hiddenMenu {
+    position: sticky;
+  }
+
+  .hiddenMenu {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #hiddenMenu img {
+    float: left;
+    display: block;
+    width: auto;
+    height: 100%;
+    margin-right: 0;
+  }
+
+  #contacts {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "logo logo logo"
+      "mail phone copyright";
+  }
+  .logo {
+    grid-area: logo;
+    width: 50%;
+    margin: auto;
+  }
+  .phone {
+    grid-area: phone;
+    text-align: center;
+  }
+  .mail {
+    grid-area: mail;
+    text-align: center;
+  }
+
+  .copyright {
+    grid-area: copyright;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  #promotion {
+    margin-top: calc(var(--secondaryFontSizeAndSpacing) * 2);
+  }
+  h1 {
+    font-size: var(--secondaryFontSizeAndSpacing);
+  }
+  h2 {
+    font-size: var(--tretiaryFontSizeAndSpacing);
+    margin-bottom: var(--tretiaryFontSizeAndSpacing);
+    margin-top: var(--tretiaryFontSizeAndSpacing);
+  }
+
+  p {
+    font-size: calc(var(--tretiaryFontSizeAndSpacing) * 0.8);
+  }
+  form p,
+  form label,
+  form input {
+    font-size: calc(var(--tretiaryFontSizeAndSpacing) * 0.7);
+  }
+
+  #contacts {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "logo" "address" "mail" "phone" "copyright";
+    padding-left: var(--secondaryFontSizeAndSpacing);
+  }
+  .logo {
+    grid-area: logo;
+    width: 50%;
+    margin: auto;
+  }
+  .phone {
+    grid-area: phone;
+  }
+  .mail {
+    grid-area: mail;
+  }
+  .address {
+    grid-area: address;
+  }
+  .copyright {
+    grid-area: copyright;
+  }
+  .copyright p {
+    text-align: center;
+  }
+
+  .dropDownContent {
+    display: none;
+    position: relative;
+    z-index: 10;
+    bottom: 5%;
+  }
+
+  .dropDownContent a {
+    display: block;
+  }
+
+  .dropDownButton {
+    border-radius: 50%;
+    width: calc(var(--secondaryFontSizeAndSpacing) * 1.1);
+    height: calc(var(--secondaryFontSizeAndSpacing) * 1.1);
+    padding: 0;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .dropDown {
+    display: block;
+    position: fixed;
+    float: right;
+    bottom: 7%;
+    right: var(--tretiaryFontSizeAndSpacing);
+    z-index: 3;
+  }
+
+  .arrowUp {
+    display: block;
+    position: fixed;
+    bottom: 7%;
+    right: calc(var(--secondaryFontSizeAndSpacing) * 2);
+    z-index: 3;
+  }
+
+  .dropDown:active .dropDownContent,
+  .dropDown:hover .dropDownContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label-for-checkbox {
+    height: calc(var(--secondaryFontSizeAndSpacing) * 2);
+    width: calc(var(--secondaryFontSizeAndSpacing) * 2);
+  }
+
+  .hairwash,
+  .haircut,
+  .colouring,
+  .styling {
+    background-size: calc(var(--secondaryFontSizeAndSpacing) * 2)
+      calc(var(--secondaryFontSizeAndSpacing) * 2);
+  }
+
+  .hiddenMenu,
+  #hiddenMenu,
+  #hiddenMenu img {
+    display: none;
+  }
+
+  #promotion {
+    margin-top: var(--tretiaryFontSizeAndSpacing);
+  }
+  .info,
+  .stuff {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
