@@ -1,5 +1,9 @@
 // to minimize code, data is imported from json file
-import language from "./output.json" assert { type: "json" };
+
+
+import language from './output.json' assert { type: "json" };
+
+
 
 // Object for addeventlistener on all buttons changing language.
 const countries = {
@@ -36,3 +40,4 @@ for (const [key, value] of Object.entries(countries)) {
     });
   }
 }
+
