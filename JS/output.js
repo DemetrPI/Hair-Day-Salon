@@ -1,4 +1,4 @@
-{
+const language = {
     "origin": {
         "translate0": "Hair Day salon",
         "translate1": "Hair Day beauty salon",
@@ -147,3 +147,5 @@
 
     }
 }
+
+export {language} 

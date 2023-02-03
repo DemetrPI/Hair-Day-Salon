@@ -1,8 +1,7 @@
 // to minimize code, data is imported from json file
 
 
-import language from './output.json' assert { type: "json" };
-
+import {language} from './output.js'
 
 
 // Object for addeventlistener on all buttons changing language.
